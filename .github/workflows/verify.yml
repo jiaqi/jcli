@@ -5,5 +5,4 @@ on:
 
 jobs:
   verify:
-    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-verify.yml@main
-
+    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-verify.yml@seattle
