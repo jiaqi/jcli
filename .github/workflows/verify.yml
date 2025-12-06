@@ -3,4 +3,4 @@ on:
   push:
 jobs:
   verify:
-    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-verify.yml@seattle
+    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-verify.yml@main
