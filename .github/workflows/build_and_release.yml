@@ -12,4 +12,3 @@ jobs:
     secrets:
       awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
       awsSecretkey: ${{ secrets.AWS_SECRET_KEY }}
-
