@@ -11,7 +11,7 @@
   </parent>
   <artifactId>jcli</artifactId>
   <name>jcli</name>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.0.2</version>
   <description>Annotation based command line arguments parser</description>
   <url>https://github.com/cyclopsgroup/jcli</url>
   <inceptionYear>2008</inceptionYear>
