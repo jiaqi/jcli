@@ -1,6 +1,14 @@
-name: Maven verify
+name: verify
+
 on:
   push:
+    paths-ignore:
+      - "**/*.md"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.sha }}
+  cancel-in-progress: true
+
 jobs:
-  verify:
-    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-verify.yml@main
+  build_and_verify:
+    uses: jiaqi/cyclopsgroup/.github/workflows/maven-verify.yml@main

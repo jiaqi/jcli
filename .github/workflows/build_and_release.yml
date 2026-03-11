@@ -1,14 +1,17 @@
-name: Maven release
+name: build_and_release
 
 on:
   push:
     branches:
       - main
-      - snapshot
+    paths-ignore:
+      - "**/*.md"
+      - "src/test/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.sha }}
+  cancel-in-progress: true
 
 jobs:
-  build_and_release:
-    uses: cyclopsgroup/cyclopsgroup/.github/workflows/maven-release-snapshot.yml@main
-    secrets:
-      awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      awsSecretkey: ${{ secrets.AWS_SECRET_KEY }}
+  publish:
+    uses: jiaqi/cyclopsgroup/.github/workflows/maven-publish.yml@main
