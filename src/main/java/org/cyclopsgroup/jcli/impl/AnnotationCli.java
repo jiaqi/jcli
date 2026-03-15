@@ -13,7 +13,9 @@ class AnnotationCli implements org.cyclopsgroup.jcli.spi.Cli {
 
   private final boolean undefined;
 
-  /** @param cli Annotation cli */
+  /**
+   * @param cli Annotation cli
+   */
   AnnotationCli(Cli cli) {
     this.cli = cli;
     this.undefined = cli == null;

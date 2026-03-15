@@ -8,13 +8,17 @@ public class WithoutCli {
 
   String optionWithDash;
 
-  /** @param value A string option */
+  /**
+   * @param value A string option
+   */
   @Option(name = "a")
   public void setOptionA(String value) {
     this.optionA = value;
   }
 
-  /** @param value A string option with dash in name */
+  /**
+   * @param value A string option with dash in name
+   */
   @Option(name = "d", longName = "with-dash")
   public void setOptionWithDash(String value) {
     this.optionWithDash = value;
