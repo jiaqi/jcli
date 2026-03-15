@@ -49,12 +49,16 @@ public final class CommandLine {
     this.optionValues.add(new OptionValue(name, value, shortName));
   }
 
-  /** @return List of arguments */
+  /**
+   * @return List of arguments
+   */
   public List<String> getArguments() {
     return arguments;
   }
 
-  /** @return List of option and values */
+  /**
+   * @return List of option and values
+   */
   public final List<OptionValue> getOptionValues() {
     return optionValues;
   }

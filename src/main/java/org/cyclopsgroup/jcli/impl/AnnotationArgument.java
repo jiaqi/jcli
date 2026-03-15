@@ -5,7 +5,9 @@ import org.cyclopsgroup.jcli.annotation.Argument;
 class AnnotationArgument implements org.cyclopsgroup.jcli.spi.Argument {
   private Argument argument;
 
-  /** @param argument Argument annotation */
+  /**
+   * @param argument Argument annotation
+   */
   AnnotationArgument(Argument argument) {
     this.argument = argument;
   }

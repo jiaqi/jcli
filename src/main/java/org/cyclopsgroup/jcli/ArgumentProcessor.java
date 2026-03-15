@@ -55,7 +55,9 @@ public abstract class ArgumentProcessor<T> {
     return forType(beanType);
   }
 
-  /** @return Implementation of parsing context */
+  /**
+   * @return Implementation of parsing context
+   */
   public abstract ParsingContext createParsingContext();
 
   /**

@@ -15,15 +15,23 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Cli {
-  /** @return String description of command */
+  /**
+   * @return String description of command
+   */
   String description() default "";
 
-  /** @return Name of command */
+  /**
+   * @return Name of command
+   */
   String name();
 
-  /** @return Note displayed as footer */
+  /**
+   * @return Note displayed as footer
+   */
   String note() default "";
 
-  /** @return True if unexpected option or argument is expected to cause error */
+  /**
+   * @return True if unexpected option or argument is expected to cause error
+   */
   boolean restrict() default true;
 }

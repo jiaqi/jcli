@@ -14,7 +14,9 @@ public final class ValidationResult {
   public static final class OptionMissing extends Violation {
     private final String optionName;
 
-    /** @param optionName Name of missing option */
+    /**
+     * @param optionName Name of missing option
+     */
     public OptionMissing(String optionName) {
       this.optionName =
           Preconditions.checkNotNull(optionName, "Name of missing option can't be null.");
@@ -34,7 +36,9 @@ public final class ValidationResult {
   public static final class UnexpectedOption extends Violation {
     private final String optionName;
 
-    /** @param optionName Name of unexpected option */
+    /**
+     * @param optionName Name of unexpected option
+     */
     public UnexpectedOption(String optionName) {
       this.optionName =
           Preconditions.checkNotNull(optionName, "Name of missing option can't be null.");
@@ -76,7 +80,9 @@ public final class ValidationResult {
     return Collections.unmodifiableList(violations);
   }
 
-  /** @return True if there is not violation */
+  /**
+   * @return True if there is not violation
+   */
   public boolean isValid() {
     return violations.isEmpty();
   }

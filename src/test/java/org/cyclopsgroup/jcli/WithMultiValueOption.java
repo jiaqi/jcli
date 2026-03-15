@@ -15,12 +15,16 @@ import org.cyclopsgroup.jcli.annotation.Option;
 public class WithMultiValueOption {
   private List<String> options;
 
-  /** @return List value of option */
+  /**
+   * @return List value of option
+   */
   public final List<String> getOptions() {
     return options;
   }
 
-  /** @param options Option values */
+  /**
+   * @param options Option values
+   */
   @Option(name = "o", longName = "option", description = "Multi value option")
   @MultiValue(listType = ArrayList.class)
   public final void setOptions(List<String> options) {
