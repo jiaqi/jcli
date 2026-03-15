@@ -12,13 +12,17 @@ import org.cyclopsgroup.jcli.annotation.Cli;
 public class WithSimpleArgument {
   private String arg;
 
-  /** @param arg Argument value */
+  /**
+   * @param arg Argument value
+   */
   @Argument
   public final void setArg(String arg) {
     this.arg = arg;
   }
 
-  /** @return Argument value */
+  /**
+   * @return Argument value
+   */
   public final String getArg() {
     return arg;
   }
